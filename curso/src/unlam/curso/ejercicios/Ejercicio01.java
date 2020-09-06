@@ -1,7 +1,5 @@
 package unlam.curso.ejercicios;
 
-import java.util.Arrays;
-
 public class Ejercicio01 {
 	
 	public boolean solution(int[][] m) {
