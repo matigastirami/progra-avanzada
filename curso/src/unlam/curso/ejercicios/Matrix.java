@@ -2,6 +2,17 @@ package unlam.curso.ejercicios;
 
 public class Matrix {
 	
+	public static void main(String args[]) {
+		int[][] m = {
+				{1,2,3,4},
+				{5,6,7,8},
+				{9,10,11,12},
+				{13,14,15,16}
+		};
+		
+		weirdPrint(m);
+	}
+	
 	public static int countOcurrences(int[] v, int elem) {
 		int count = 0;
 		
@@ -51,4 +62,22 @@ public class Matrix {
 		
 	}
 
+	public static void weirdPrint(int[][] m) {
+		
+		   for (int i = m[0].length - 1; i > 0; i--) {
+		       for (int j = 0, x = i; x <= m.length - 1; j++, x++) {
+		    	   System.out.print(m[x][j] + " ");
+		          
+		       }
+		       System.out.println("");
+		   }
+
+
+		   for (int i = 0; i <= m.length - 1; i++) {
+		        for (int j = 0, y = i; y <= m[0].length - 1; j++, y++) {
+		        	System.out.print(m[j][y] + " ");
+		        }
+		        System.out.println("");
+		   }
+	}
 }
